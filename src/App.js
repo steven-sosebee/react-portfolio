@@ -2,10 +2,11 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ProjectProvider } from "./components/projects";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Navbar from "./components/navbar";
-import Project from "./components/project";
+// import Project from "./components/project";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <Navbar />
       <Header />
+
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -24,6 +26,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+
       <Footer />
     </Router>
   );

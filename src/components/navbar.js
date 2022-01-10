@@ -1,14 +1,18 @@
 import React from "react";
+import { menu } from "../data/menu";
 
 export default function Navbar() {
+  const navStyle = {
+    backgroundColor: "darkGrey",
+  };
+
   return (
     <div>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/about">About Me</a>
-      </li>
+      {menu.map((nav) => (
+        <li key={nav.menuItem} style={navStyle}>
+          <a href={nav.menuLink}> {nav.menuItem}</a>
+        </li>
+      ))}
     </div>
   );
 }
