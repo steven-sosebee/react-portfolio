@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../components/project";
-import { ProjectProvider } from "../components/projects";
+// import { ProjectProvider } from "../components/projects";
 
 export default function Portfolio() {
   return (
