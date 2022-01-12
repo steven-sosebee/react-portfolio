@@ -17,16 +17,17 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Header />
+      <content>
+        <Header />
 
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </content>
       <Footer />
     </Router>
   );

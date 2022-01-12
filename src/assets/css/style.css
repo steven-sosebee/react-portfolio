@@ -1,3 +1,110 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
 .active {
-  background-color: darkolivegreen;
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
+navbar {
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  background-color: rgb(6, 0, 43);
+  display: block;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  list-style-type: none;
+  display: inline;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+navbar a {
+  padding: 0px 15px 15px 15px;
+}
+navbar a:hover {
+  background-color: dimgray;
+}
+
+a:visited {
+  text-decoration: none;
+}
+.header {
+  margin-bottom: 10px;
+}
+.main-header {
+  background-color: darkslategrey;
+  color: whitesmoke;
+  height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  display: block;
+}
+content {
+  flex: 1 0 auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  /* background-color: slategray; */
+}
+.project {
+  border-radius: 5px;
+  flex: 1 1 auto;
+  /* aspect-ratio: 0.75; */
+  max-width: 350px;
+  max-height: 300px;
+  /* display: flex; */
+  flex-direction: column;
+  box-shadow: 5px 5px 0px 0px darkslategray;
+  margin: 5px;
+  overflow: hidden;
+  text-align: left;
+  transition: 0.5s;
+}
+.project:hover {
+  transform: scale(1.02);
+}
+.project span {
+  font-weight: bold;
+}
+.project p {
+  margin: 0px auto;
+}
+img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 50%;
+  width: 100%;
+}
+footer {
+  display: block;
+  background-color: darkslategray;
+  text-align: center;
+  width: 100vw;
+}
+footer ul {
+  margin: 0px auto;
+  text-align: center;
+  list-style-type: none;
+}
+footer ul li {
+  padding: 0px 15px;
+  display: inline;
+}
+
+#contact label {
+  margin-right: 20px;
 }
