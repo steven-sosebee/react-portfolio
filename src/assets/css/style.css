@@ -84,11 +84,22 @@ content {
 .project p {
   margin: 0px auto;
 }
-img {
+.project img {
   object-fit: cover;
   overflow: hidden;
   height: 50%;
   width: 100%;
+}
+.avatar {
+  border-radius: 10px;
+  display: block;
+  margin-right: 5%;
+}
+.about-me {
+  display: flex;
+}
+.textarea {
+  display: block;
 }
 footer {
   display: block;

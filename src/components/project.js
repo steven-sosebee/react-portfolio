@@ -2,6 +2,7 @@ import React from "react";
 // import quiz from "../images/quiz.jpg";
 // import { useProjectContext } from "./projects";
 import { projects } from "../data/projects";
+const imgsrc = require("../images/quiz.jpg");
 export default function Project() {
   // const { projects } = useProjectContext();
   // console.log(projects);
