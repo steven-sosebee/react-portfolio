@@ -66,6 +66,7 @@ content {
   /* aspect-ratio: 0.75; */
   max-width: 350px;
   max-height: 300px;
+  min-width: 300px;
   /* display: flex; */
   flex-direction: column;
   box-shadow: 5px 5px 0px 0px darkslategray;
