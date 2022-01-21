@@ -1,21 +1,21 @@
 import React from "react";
+// import quiz from "../images/quiz.jpg";
 // import { useProjectContext } from "./projects";
 import { projects } from "../data/projects";
-// import "../assets/images";
 export default function Project() {
   // const { projects } = useProjectContext();
   // console.log(projects);
-
+  // const quiz = "../images/quiz.jpg";
   return (
     <div>
       <p>Projects List:</p>
-      <ul class="project-list">
+      <ul className="project-list">
         {projects.map((project) => (
-          <li class="project" key={project.name}>
+          <li className="project" key={project.name}>
             <a href={project.link}>
               <img src={project.image} alt="demo"></img>
             </a>
-            <projectbody>
+            <div className="projectbody">
               <p>
                 <span>{project.name}</span>
                 <br></br>
@@ -30,7 +30,7 @@ export default function Project() {
                   Github Repo
                 </a>
               </p>
-            </projectbody>
+            </div>
           </li>
         ))}
       </ul>
